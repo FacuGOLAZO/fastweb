@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Contactanos</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/contacto.css"> 
+</head>
+<body>
+    <a href="https://wa.me/" class="btn-wsp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <header class="header-principal">
+
+		<!--Ahora crearemos el Menú, el cual también va a cambiar de formato de acuerdo al tamaño de la pantalla. ATAJO: nav.nav-principal>.contenedor
+		-->
+		<nav class="nav-principal">
+		
+		<div class="contenedor contenedor-flex">
+		
+		<!-- atajo: span.icon-menu#btnMenu -->
+		<!-- Nota: el código de fondo gris reemplazarlo por el código del icono que utilicen -->
+		<span class="icon-menu" id="btnMenu"><i class="fas fa-align-justify"></i> </span>
+		
+		<!-- atajo: .contenedor-logo>img>h1.logo>a.logo-link -->
+		
+		<div class="contenedor-logo">
+		<img  class="imglogo" src="img/logo.png" alt="logo">
+		<h1 class="logo"><a href="index.html" class="logo-link">Webfast</a></h1>
+		</div> 
+		
+		<!--ATAJO: ul.menu#menu>li.menu-item*4>a.menu-link -->
+		<ul class="menu" id="menu">
+		<li class="menu-item"><a href="index.html" class="menu-link menu-link_select">Inicio</a></li>
+		<li class="menu-item"><a href="nosotros.html" class="menu-link">Nosotros</a></li>
+		<li class="menu-item"><a href="galeria.html" class="menu-link">Galería</a></li>
+		<li class="menu-item"><a href="contacto.html" class="menu-link">Contacto</a></li>
+		</ul>
+		
+		
+		
+		
+		<!--          ATAJO: .social-icon>a.social-icon_link*3>span.icon -->
+		<!--   Nota: el código de fondo gris reemplazarlo por el código del icono que utilicen -->
+		
+		<div class="social-icon">
+		<a href="" class="social-icon_link"><span class="icon-facebook"><i class="fab fa-facebook-square"></i> </span></a>
+		<a href="" class="social-icon_link"><span class="icon-twitter"><i class="fab fa-twitter-square"></i> </span></a>
+		<a href="" class="social-icon_link"><span class="icon-instagram"><i class="fab fa-instagram-square"></i> </span></a>
+		</div>
+		
+		</div>
+		
+		</nav>
+		
+	</header>
+		
+	<section class="banner">
+		<img src="img/contacto/bannercontacto.jpg" alt="" class="img-banner">
+		<div class="contenido-banner">Déjanos tu Mensaje </div>
+	</section>
+
+        <!--Contenido Principal Contacto
+        ATAJO: main.main>section.grupo.contacto>h2.titulo-grupo+.contenedor.contenedor-flex>.info-contacto.column.columna-50>h3.titulo-columna -->
+    <main class="main">
+        <section class="grupo contacto">
+                <h2 class="titulo-grupo">Contáctenos</h2>
+            <div class="contenedor contenedor-flex">
+                <div class="info-contacto columna columna-50">
+                    <h3 class="titulo-columna">Información de Contacto</h3>
+                        <!-- Atajo: p.desc-columna>lorem25 -->
+                        <p class="desc-columna">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos quasi excepturi quas sed? Fuga rerum, obcaecati aliquam quaerat sapiente, nemo</p>
+                        <!-- Atajo: p.desc-columna*4>span.icon- -->
+                        <p class="desc-columna"><span class="icon-phone"></span><i class="icon-phone fas fa-phone-square"></i> Telefono: 4736-3726</p>
+                        <p class="desc-columna"><span class="icon-phone"></span><i class="icon-phone fab fa-whatsapp-square"></i>Celular: +54901145673456</p>
+                        <p class="desc-columna"><span class="icon-location"></span><i class="icon-location fas fa-map-marker-alt"></i>Roca 3523, Florida</p>
+                        <p class="desc-columna"><span class="icon-mail"></span><i class="icon-mail fas fa-envelope-square"></i>otromail@gmail.com</p>
+                        <!-- Atajo: .social-icon>a.social-icon_link*3>span.icon- -->
+                    <div class="social-icon">
+                        <a href="" class="social-icon_link"><span class="icon-facebook"><i class="fab fa-facebook-square"></i></span></a>
+                        <a href="" class="social-icon_link"><span class="icon-twitter"><i class="fab fa-twitter-square"></i></span></a>
+                        <a href="" class="social-icon_link"><span class="icon-instagram"><i class="fab fa-instagram-square"></i></span></a>
+                    </div>
+                </div>
+                <!-- Atajo: form.formulario.columna.columna-50 -->
+                <form action="enviar.php" method="post" class="formulario columna columna-50">
+                    <label for="" class="formulario-label">Nombre:</label>
+                    <input type="text" class="formulario-input-txt" name="nombre">
+                    <label for="" class="formulario-label">Mail:</label>
+                    <input type="text" class="formulario-input-txt" name="mail">
+                    <label for="" class="formulario-label">Teléfono:</label>
+                    <input type="number" class="formulario-input-txt" name="telefono">
+                    <label for="" class="formulario-label">Mensaje:</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" class="formulario-textarea"></textarea>
+                    <input type="submit" name="submit" class="btn formulario-btn" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer-principal">
+    <div class="contenedor contenedor-flex caja">
+        <div class="columna columna-33">
+            <h2 class="titulo-columna">Por qué nos elegiste?</h2>
+            <p class="desc-columna"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consectetur beatae et labore, quisquam
+                praesentium, iusto blanditiis obcaecati alias architecto eveniet cumque minus sit asperiores impedit incidunt. Voluptas, unde, eum.</p>
+        </div>
+    <div class="columna columna-33">
+        <h2 class="titulo-columna">Contáctanos</h2>
+        <p class="desc-columna"><i class="icon-phone fas fa-phone"></i>4567-1234</p>
+        <p class="desc-columna"><i class="icon-whats fab fa-whatsapp"></i>1163542345</p>
+        <p class="desc-columna"><i class="icon-mail fas fa-envelope"></i>fulano@gmail.com</p>
+    </div>
+    <div class="columna columna-33">
+        <h2 class="titulo-columna">Seguinos en Nuestras Redes</h2>
+        <p class="desc-columna"><a href="" class="icon-facebook"><i class="icon-facebook fab fa-facebook-square"></i> Seguinos </a> </p>
+        <p class="desc-columna"><a href="" class="icon-twitter"><i class="icon-twitter fab fa-twitter"></i>Seguinos</a></p>
+        <p class="desc-columna"><a href="" class="icon-instagram"><i class="icon-instagram fab fa-instagram"></i>Seguinos</a></p>
+    </div>
+    <div class="copy"><i class="far fa-copyright"></i> Copyright - 2021</div>
+    </div>
+</footer>
+
+
+<script src="js/menu.js"></script>
+
+
+</body>
+</html>

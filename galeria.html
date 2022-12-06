@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>My kitchen-Galería</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/galeria.css"> 
+</head>
+<body>
+    <a href="https://wa.me/" class="btn-wsp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!-- A continuación de la etiqueta body escribir lo siguiente: -->
+
+    <div class="modal" id="modal">
+        <div class="contenido-modal">
+            <img src="" alt="" class="img-modal" id="img-modal">
+        </div>
+        <div class="modal-btn" id="modal-btn">X</div>
+    </div>
+
+    <header class="header-principal">
+
+		        <!--Ahora crearemos el Menú, el cual también va a cambiar de formato de acuerdo al tamaño de la pantalla. ATAJO: nav.nav-principal>.contenedor
+		        -->
+		<nav class="nav-principal">
+		
+		    <div class="contenedor contenedor-flex">
+		
+		        <!-- atajo: span.icon-menu#btnMenu -->
+		        <!-- Nota: el código de fondo gris reemplazarlo por el código del icono que utilicen -->
+		                    <span class="icon-menu" id="btnMenu"><i class="fas fa-align-justify"></i> </span>
+		
+		        <!-- atajo: .contenedor-logo>img>h1.logo>a.logo-link -->
+		
+		                <div class="contenedor-logo">
+		                    <img  class="imglogo" src="img/logo.png" alt="logo">
+		                    <h1 class="logo"><a href="index.html" class="logo-link">Webfast</a></h1>
+		                </div> 
+		
+		            <!--ATAJO: ul.menu#menu>li.menu-item*4>a.menu-link -->
+		            <ul class="menu" id="menu">
+		                <li class="menu-item"><a href="index.html" class="menu-link menu-link_select">Inicio</a></li>
+		                <li class="menu-item"><a href="nosotros.html" class="menu-link">Nosotros</a></li>
+		                <li class="menu-item"><a href="galeria.html" class="menu-link">Galería</a></li>
+		                <li class="menu-item"><a href="contacto.html" class="menu-link">Contacto</a></li>
+		            </ul>
+		
+		
+		
+		
+		            <!--    ATAJO: .social-icon>a.social-icon_link*3>span.icon -->
+		            <!--   Nota: el código de fondo gris reemplazarlo por el código del icono que utilicen -->
+		
+		        <div class="social-icon">
+		            <a href="" class="social-icon_link"><span class="icon-facebook"><i class="fab fa-facebook-square"></i> </span></a>
+		            <a href="" class="social-icon_link"><span class="icon-twitter"><i class="fab fa-twitter-square"></i> </span></a>
+		            <a href="" class="social-icon_link"><span class="icon-instagram"><i class="fab fa-instagram-square"></i> </span></a>
+		        </div>
+		
+		    </div>
+		
+		</nav>
+		<script src="js/menu.js"></script>
+	</header>
+		
+	<section class="banner">
+		<img src="img/galeria/bannergaleria.jpg" alt="" class="img-banner">
+		<div class="contenido-banner">Hackea la web</div>
+	</section>
+
+    <main class="main">
+
+        <section class="grupo galeria">
+            <h2 class="titulo-grupo">Nuestra Galería</h2>
+            <div class="contenedor contenedor-flex">
+ 
+                <div class="columna columna-50-25">
+                    <img src="img/galeria/img1.jpg" alt="" class="img-galeria img-galeria-grande">
+                    <img src="img/galeria/img2.jpg" alt="" class="img-galeria img-galeria-chica">
+                </div>
+ 
+                <div class="columna columna-50-25">
+                    <img src="img/galeria/img3.jpg" alt="" class="img-galeria img-galeria-chica">
+                    <img src="img/galeria/img4.jpg" alt="" class="img-galeria img-galeria-grande">
+                </div>
+ 
+                <div class="columna columna-50-25">
+                    <img src="img/galeria/img5.jpg" alt="" class="img-galeria img-galeria-grande">
+                    <img src="img/galeria/img6.jpg" alt="" class="img-galeria img-galeria-chica">
+                </div>
+ 
+                <div class="columna columna-50-25">
+                    <img src="img/galeria/img7.jpg" alt="" class="img-galeria img-galeria-chica">
+                    <img src="img/galeria/img8.jpg" alt="" class="img-galeria img-galeria-grande">
+                </div>
+ 
+            </div>
+ 
+        </section>
+         
+     </main>
+  
+     <footer class="footer-principal">
+        <div class="contenedor contenedor-flex caja">
+            <div class="columna columna-33">
+                <h2 class="titulo-columna">Por qué nos elegiste?</h2>
+                <p class="desc-columna"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consectetur beatae et labore, quisquam
+                    praesentium, iusto blanditiis obcaecati alias architecto eveniet cumque minus sit asperiores impedit incidunt. Voluptas, unde, eum.</p>
+            </div>
+        <div class="columna columna-33">
+            <h2 class="titulo-columna">Contáctanos</h2>
+            <p class="desc-columna"><i class="icon-phone fas fa-phone"></i>4567-1234</p>
+            <p class="desc-columna"><i class="icon-whats fab fa-whatsapp"></i>1163542345</p>
+            <p class="desc-columna"><i class="icon-mail fas fa-envelope"></i>fulano@gmail.com</p>
+        </div>
+        <div class="columna columna-33">
+            <h2 class="titulo-columna">Seguinos en Nuestras Redes</h2>
+            <p class="desc-columna"><a href="" class="icon-facebook"><i class="icon-facebook fab fa-facebook-square"></i> Seguinos </a> </p>
+            <p class="desc-columna"><a href="" class="icon-twitter"><i class="icon-twitter fab fa-twitter"></i>Seguinos</a></p>
+            <p class="desc-columna"><a href="" class="icon-instagram"><i class="icon-instagram fab fa-instagram"></i>Seguinos</a></p>
+        </div>
+        <div class="copy"><i class="far fa-copyright"></i> Copyright - 2021</div>
+        </div>
+    </foot>
+
+
+
+ 
+ <script src="js/modal.js"></script>
+
+
+
+
+   
+</body>
+</html>

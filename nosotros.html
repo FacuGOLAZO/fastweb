@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>My kitchen-Nosotros</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/nosotros.css"> 
+</head>
+<body>
+    <a href="https://wa.me/" class="btn-wsp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <header class="header-principal">
+
+		<!--Ahora crearemos el Menú, el cual también va a cambiar de formato de acuerdo al tamaño de la pantalla. ATAJO: nav.nav-principal>.contenedor
+		-->
+		<nav class="nav-principal">
+		
+		<div class="contenedor contenedor-flex">
+		
+		<!-- atajo: span.icon-menu#btnMenu -->
+		<!-- Nota: el código de fondo gris reemplazarlo por el código del icono que utilicen -->
+		<span class="icon-menu" id="btnMenu"><i class="fas fa-align-justify"></i> </span>
+		
+		<!-- atajo: .contenedor-logo>img>h1.logo>a.logo-link -->
+		
+		<div class="contenedor-logo">
+		<img  class="imglogo" src="img/logo.png" alt="logo">
+		<h1 class="logo"><a href="index.html" class="logo-link">Webfast</a></h1>
+		</div> 
+		
+		<!--ATAJO: ul.menu#menu>li.menu-item*4>a.menu-link -->
+		<ul class="menu" id="menu">
+		<li class="menu-item"><a href="index.html" class="menu-link menu-link_select">Inicio</a></li>
+		<li class="menu-item"><a href="nosotros.html" class="menu-link">Nosotros</a></li>
+		<li class="menu-item"><a href="galeria.html" class="menu-link">Galería</a></li>
+		<li class="menu-item"><a href="contacto.html" class="menu-link">Contacto</a></li>
+		</ul>
+		
+		
+		
+		
+		<!--          ATAJO: .social-icon>a.social-icon_link*3>span.icon -->
+		<!--   Nota: el código de fondo gris reemplazarlo por el código del icono que utilicen -->
+		
+		<div class="social-icon">
+		<a href="" class="social-icon_link"><span class="icon-facebook"><i class="fab fa-facebook-square"></i> </span></a>
+		<a href="" class="social-icon_link"><span class="icon-twitter"><i class="fab fa-twitter-square"></i> </span></a>
+		<a href="" class="social-icon_link"><span class="icon-instagram"><i class="fab fa-instagram-square"></i> </span></a>
+		</div>
+		
+		</div>
+		
+		</nav>
+		
+	</header>
+		
+	<section class="banner">
+		<img src="img/nosotros/bannerequipo.jpeg" alt="" class="img-banner">
+		<div class="contenido-banner">Poniendo lo mejor de nuestro equipo para vos! </div>
+	</section>
+
+    <!--Contenido Principal (main), el mismo cuenta de una parte de descripción que es el primer section, una parte de (imagen + descripción) que es el segundo section, y una tercer parte de Productos Destacados que es el tercer section
+    
+    ATAJO: main.main>section.grupo.grupo-color>.contenedor>h2.titulo-principal+p.parrafo-principal>lorem30 -->
+
+    <main class="main">
+        <section class="grupo grupo-color">
+            <div class="contenedor">
+               <h2 class="titulo-principal">Acerca de Nosotros</h2>
+               <p class="parrafo-principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, harum aperiam blanditiis quibusdam eveniet. Voluptas maxime, ad dolore sequi, quia consequatur inventore ipsum numquam at quisquam labore quasi architecto earum!</p>
+            </div>
+        </section>
+    <!--Segunda section    ---   ATAJO: section.grupo.nuestro-equipo>h2.titulo-grupo+.contenedor.contenedor-flex>.columna.columna-33*3>h3.nuestro-equipo-titulo+img.nuestro-equipo-img+p.desc-nuestro-equipo>lorem20  -->
+    
+    <section class="grupo nuestro-equipo">
+        <h2 class="titulo-grupo">Nuestro Equipo</h2>
+        <div class="contenedor contenedor-flex">
+            <div class="columna columna-33">
+                <h3 class="nuestro-equipo-titulo">Hacker</h3>
+                <img src="img/nosotros/eq1.jpg" alt="" class="nuestro-equipo-img">
+                <p class="desc-nuestro-equipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi reiciendis eveniet natus nihil sunt, hic quae est, minus ducimus alias animi neque consequuntur, atque enim doloribus eaque iure officia voluptas?</p>
+            </div>
+
+            <div class="columna columna-33">
+                <h3 class="nuestro-equipo-titulo">Hombre QR</h3>
+                <img src="img/nosotros/eq2.jpg" alt="" class="nuestro-equipo-img">
+                <p class="desc-nuestro-equipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam maiores in non doloribus odit id, saepe, tenetur nulla</p>
+                
+                
+            </div>
+
+            <div class="columna columna-33">
+                <h3 class="nuestro-equipo-titulo">anonymous </h3>
+                <img src="img/nosotros/eq3.jpg" alt="" class="nuestro-equipo-img">
+                <p class="desc-nuestro-equipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam maiores in non doloribus odit id, saepe, tenetur nulla, exercitationem temporibus tempora laborum aliquid optio labore magnam repudiandae similique voluptas nostrum.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer-principal">
+    <div class="contenedor contenedor-flex caja">
+        <div class="columna columna-33">
+            <h2 class="titulo-columna">Por qué nos elegiste?</h2>
+            <p class="desc-columna"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consectetur beatae et labore, quisquam
+                praesentium, iusto blanditiis obcaecati alias architecto eveniet cumque minus sit asperiores impedit incidunt. Voluptas, unde, eum.</p>
+        </div>
+    <div class="columna columna-33">
+        <h2 class="titulo-columna">Contáctanos</h2>
+        <p class="desc-columna"><i class="icon-phone fas fa-phone"></i>4567-1234</p>
+        <p class="desc-columna"><i class="icon-whats fab fa-whatsapp"></i>1163542345</p>
+        <p class="desc-columna"><i class="icon-mail fas fa-envelope"></i>fulano@gmail.com</p>
+    </div>
+    <div class="columna columna-33">
+        <h2 class="titulo-columna">Seguinos en Nuestras Redes</h2>
+        <p class="desc-columna"><a href="" class="icon-facebook"><i class="icon-facebook fab fa-facebook-square"></i> Seguinos </a> </p>
+        <p class="desc-columna"><a href="" class="icon-twitter"><i class="icon-twitter fab fa-twitter"></i>Seguinos</a></p>
+        <p class="desc-columna"><a href="" class="icon-instagram"><i class="icon-instagram fab fa-instagram"></i>Seguinos</a></p>
+    </div>
+    <div class="copy"><i class="far fa-copyright"></i> Copyright - 2021</div>
+    </div>
+</footer>
+
+
+<script src="js/menu.js"></script>
+
+
+</body>
+</html>
